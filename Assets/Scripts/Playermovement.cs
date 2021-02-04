@@ -17,7 +17,7 @@ public class Playermovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
 
-        transform.position = transform.position + movement  * Time.deltaTime;
+        transform.position = transform.position + movement * movespeed * Time.deltaTime;
     }
 
 }
