@@ -11,22 +11,18 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8133783640767909264}
-<<<<<<< HEAD:Assets/Sprites/spazebilder/walk_color_back_sprite_corrected_0.controller
-    m_Position: {x: 300, y: 20, z: 0}
-=======
-    m_Position: {x: 340, y: 0, z: 0}
+    m_Position: {x: 430, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4310957892102095404}
-    m_Position: {x: 400, y: 240, z: 0}
->>>>>>> bd013d06a558ac38deb1f9ea12a1b96fc0b43726:Assets/Sprites/spazebilder/player_animations.controller
+    m_Position: {x: 420, y: 210, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 620, y: 60, z: 0}
+  m_EntryPosition: {x: 110, y: 130, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 8133783640767909264}
 --- !u!1102 &-4310957892102095404
@@ -107,7 +103,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idleanimation
+  m_Name: walkbackanim
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -120,7 +116,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8d417d803a7581f4fb34068bf2ab8bcb, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3503edf8cc390ab45af94a431b273fc5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
