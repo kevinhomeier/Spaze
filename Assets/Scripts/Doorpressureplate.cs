@@ -8,6 +8,7 @@ public class Doorpressureplate : MonoBehaviour
     private Idoor door;
     private float timer;
     public Sprite greenbutton;
+    public Sprite opendoor;
     
     
     private void Awake()
@@ -21,7 +22,8 @@ public class Doorpressureplate : MonoBehaviour
         {
             //door.OpenDoor();
             this.gameObject.GetComponent<SpriteRenderer>().sprite = greenbutton;
-            Destroy(doorGameObject);
+            doorGameObject.gameObject.GetComponent<SpriteRenderer>().sprite = opendoor;
+            
         }
     }
 
