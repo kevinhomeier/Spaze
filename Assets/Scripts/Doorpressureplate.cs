@@ -23,7 +23,7 @@ public class Doorpressureplate : MonoBehaviour
             //door.OpenDoor();
             this.gameObject.GetComponent<SpriteRenderer>().sprite = greenbutton;
             doorGameObject.gameObject.GetComponent<SpriteRenderer>().sprite = opendoor;
-            
+            doorGameObject.gameObject.GetComponent<Collider2D>().enabled = false;
         }
     }
 
