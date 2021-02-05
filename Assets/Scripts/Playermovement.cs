@@ -8,12 +8,12 @@ public class Playermovement : MonoBehaviour
     public float movespeed;
     public Animator animator;
     
-
+   
     void Update()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
 
-
+        rb.velocity = new Vector2(movement.x, movement.y);
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
