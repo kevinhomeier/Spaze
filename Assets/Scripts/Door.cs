@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject doorGameObject;
+   
     private Playermovement thePlayer;
 
     public SpriteRenderer theSR;
     public Sprite doorOpenSprite;
+    public GameObject Collider;
 
     public bool doorOpen, waitingToOpen;
 
@@ -29,9 +30,9 @@ public class Door : MonoBehaviour
 
                 doorOpen = true;
                 theSR.sprite = doorOpenSprite;
-
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
+                Destroy(Collider);
                 
             }
         }
@@ -44,7 +45,7 @@ public class Door : MonoBehaviour
             {
                 thePlayer.followingKey.followTarget = transform;
                 waitingToOpen = true;
-                doorGameObject.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+               
             }
         }
     }
