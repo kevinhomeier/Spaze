@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 7a67ce31fcf6578449bb5fbce4c2a212
+guid: a522d362fc832534aa4b09588944a1da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 51112568098161488
-    second: start_point_sprite_sheet_0
+      213: -1175682556058531066
+    second: start_point_animated_brighter_0
   - first:
-      213: -464596488216357599
-    second: start_point_sprite_sheet_1
+      213: 3790637266175544853
+    second: start_point_animated_brighter_1
   - first:
-      213: -2520729198320297396
-    second: start_point_sprite_sheet_2
+      213: 5930487354200146834
+    second: start_point_animated_brighter_2
   - first:
-      213: -4288694257383813956
-    second: start_point_sprite_sheet_3
+      213: 4335433482674191805
+    second: start_point_animated_brighter_3
   - first:
-      213: 3274900995113612137
-    second: start_point_sprite_sheet_4
+      213: 1771764298167057504
+    second: start_point_animated_brighter_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +106,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: start_point_sprite_sheet_0
+      name: start_point_animated_brighter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b028db1f22fafe0800000000000000
+      internalID: -1175682556058531066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: start_point_animated_brighter_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e40ca828c0b9430800000000000000
+      internalID: 3790637266175544853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: start_point_animated_brighter_2
       rect:
         serializedVersion: 2
         x: 0
         y: 600
-        width: 300
-        height: 300
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0538c012c9695b000800000000000000
-      internalID: 51112568098161488
+      spriteID: 293cb0cd3d25d4250800000000000000
+      internalID: 5930487354200146834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: start_point_sprite_sheet_1
+      name: start_point_animated_brighter_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 600
         y: 600
-        width: 300
-        height: 300
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,62 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12558fb94fb6d89f0800000000000000
-      internalID: -464596488216357599
+      spriteID: dbd312a48cd8a2c30800000000000000
+      internalID: 4335433482674191805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: start_point_sprite_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4ad9274622940dd0800000000000000
-      internalID: -2520729198320297396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: start_point_sprite_sheet_3
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbc416e9b4f7b74c0800000000000000
-      internalID: -4288694257383813956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: start_point_sprite_sheet_4
+      name: start_point_animated_brighter_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 300
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 963f1589a19c27d20800000000000000
-      internalID: 3274900995113612137
+      spriteID: 06c77f1fd32969810800000000000000
+      internalID: 1771764298167057504
       vertices: []
       indices: 
       edges: []
