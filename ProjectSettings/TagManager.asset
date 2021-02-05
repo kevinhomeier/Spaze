@@ -50,6 +50,12 @@ TagManager:
   - name: Walls
     uniqueID: 2357287691
     locked: 0
+  - name: Buttons
+    uniqueID: 3563960151
+    locked: 0
+  - name: powerups
+    uniqueID: 1120517675
+    locked: 0
   - name: Player
     uniqueID: 18153891
     locked: 0
