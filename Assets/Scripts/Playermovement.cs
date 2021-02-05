@@ -7,8 +7,10 @@ public class Playermovement : MonoBehaviour
     public Rigidbody2D rb;
     public float movespeed;
     public Animator animator;
-    
-   
+    public Transform keyFollowPoint;
+    public NewKey followingKey;
+
+
     void Update()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
