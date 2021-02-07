@@ -6,7 +6,7 @@ public class Door : MonoBehaviour
 {
     public GameObject doorGameObject;
     private Playermovement thePlayer;
-
+    public BoxCollider2D anscol;
     public SpriteRenderer theSR;
     public Sprite doorOpenSprite;
 
@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         thePlayer = FindObjectOfType<Playermovement>();
     }
 
@@ -26,25 +27,27 @@ public class Door : MonoBehaviour
             if(Vector3.Distance(thePlayer.followingKey.transform.position, transform.position) <0.01f)
             {
                 waitingToOpen = false;
-
-                doorOpen = true;
+                if(doorOpen = true)
+                {
+                    anscol.isTrigger = true;
+                }
                 theSR.sprite = doorOpenSprite;
-
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
+                
                 
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(other.tag == "Player")
+        if (collider.gameObject.tag == "Player")
         {
-            if(thePlayer.followingKey != null)
+            if (thePlayer.followingKey != null)
             {
                 thePlayer.followingKey.followTarget = transform;
                 waitingToOpen = true;
-                doorGameObject.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                
             }
         }
     }

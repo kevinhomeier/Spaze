@@ -9,7 +9,7 @@ public class Playermovement : MonoBehaviour
     public Animator animator;
     public Transform keyFollowPoint;
     public NewKey followingKey;
-
+    
 
     void Update()
     {
