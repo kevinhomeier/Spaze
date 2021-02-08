@@ -11954,7 +11954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783658680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
+  m_LocalPosition: {x: 19.02, y: -2.01, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1181146750}
@@ -28203,7 +28203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529190813}
   m_LocalRotation: {x: -0, y: -0, z: 0.338897, w: 0.9408235}
-  m_LocalPosition: {x: -2, y: 10, z: 0}
+  m_LocalPosition: {x: -2, y: 9.97, z: 0}
   m_LocalScale: {x: 0.31529668, y: 0.31529668, z: 0.31529668}
   m_Children: []
   m_Father: {fileID: 0}
@@ -31839,9 +31839,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1745648769}
   - component: {fileID: 1745648768}
-  - component: {fileID: 1745648770}
   - component: {fileID: 1745648767}
   - component: {fileID: 1745648771}
+  - component: {fileID: 1745648770}
   m_Layer: 0
   m_Name: stength_powerup_0
   m_TagString: Untagged
@@ -31943,9 +31943,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745648766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3f5cfc0973e7a47a2f01f2bcf13b65, type: 3}
+  m_Script: {fileID: 11500000, guid: 383c50b344aecc1409b7b6ab775ac4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 306078614}
 --- !u!60 &1745648771
 PolygonCollider2D:
   m_ObjectHideFlags: 0
