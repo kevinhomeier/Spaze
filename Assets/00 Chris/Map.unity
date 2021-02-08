@@ -1957,6 +1957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 783658686}
   offset: {x: 0, y: 0, z: -10}
+  speed: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2008,7 +2009,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.71, z: -10}
+  m_LocalPosition: {x: -2.99, y: -3.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3985,6 +3986,8 @@ MonoBehaviour:
   rb: {fileID: 783658682}
   movespeed: 2
   animator: {fileID: 783658684}
+  keyFollowPoint: {fileID: 0}
+  followingKey: {fileID: 0}
 --- !u!95 &783658684
 Animator:
   serializedVersion: 3
@@ -4042,7 +4045,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 18153891
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4ea99f989127bcb49a93c4a4aff05041, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -9,11 +9,13 @@ public class Doorpressureplate : MonoBehaviour
     private float timer;
     public Sprite greenbutton;
     public Sprite opendoor;
-    
+    private AudioSource audioSource;
+
     
     private void Awake()
     {
         //door = doorGameObject.GetComponent<Idoor>();
+        audioSource = GetComponent <AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -24,6 +26,7 @@ public class Doorpressureplate : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = greenbutton;
             doorGameObject.gameObject.GetComponent<SpriteRenderer>().sprite = opendoor;
             doorGameObject.gameObject.GetComponent<Collider2D>().enabled = false;
+            audioSource.Play();
         }
     }
 
