@@ -23,16 +23,24 @@ public class rigidbodydisableing : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(active != true)
-        { 
+        if (other.CompareTag("Player"))
+        {
+            StartCoroutine(IDK(other));
+        }
+    }
+    public IEnumerator IDK(Collider2D player)
+    {
+        if (active != true)
+        {
             powerup = GameObject.FindGameObjectsWithTag("Powerup");
             crates = GameObject.FindGameObjectsWithTag("Crate");
             for (int i = 0; i < powerup.Length; i++)
             {
                 powerup[i].SetActive(false);
             }
+            yield return active;
         }
     }
 } 
