@@ -11,8 +11,13 @@ public class Playermovement : MonoBehaviour
     public NewKey followingKey;
     private GameObject[] powerup;
     private GameObject[] crates;
-    private float timer;
-    private bool active;
+    public float timer;
+
+    void Start()
+    {
+        powerup = GameObject.FindGameObjectsWithTag("Powerup");
+        crates = GameObject.FindGameObjectsWithTag("Crate");
+    }
 
     void Update()
     {
@@ -34,11 +39,11 @@ public class Playermovement : MonoBehaviour
                 for (int i = 0; i < powerup.Length; i++)
                 {
                     powerup[i].SetActive(true);
-                    for (int j = 0; j < crates.Length; j++)
-                    {
-                        Rigidbody2D rigidbody = crates[j].GetComponent<Rigidbody2D>();
-                        rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
-                    }
+                }
+                for (int j = 0; j < crates.Length; j++)
+                {
+                    Rigidbody2D rigidbody = crates[j].GetComponent<Rigidbody2D>();
+                    rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
                 }
             }
          }
@@ -49,17 +54,10 @@ public class Playermovement : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
-            StartCoroutine(IDK(other));
-        }
-    }
-
-    public IEnumerator IDK(Collider2D player)
-    {
-        powerup = GameObject.FindGameObjectsWithTag("Powerup");
-        crates = GameObject.FindGameObjectsWithTag("Crate");
-        for (int i = 0; i < powerup.Length; i++)
-        {
-            powerup[i].SetActive(false);
+            for (int i = 0; i < powerup.Length; i++)
+            {
+                powerup[i].SetActive(false);
+            }
             for (int j = 0; j < crates.Length; j++)
             {
                 Rigidbody2D rigidbody = crates[j].GetComponent<Rigidbody2D>();
@@ -67,9 +65,7 @@ public class Playermovement : MonoBehaviour
                 rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY;
                 rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
+            timer = 10f;
         }
-        timer = 10f;
-        yield return active;
     }
-
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class rigidbodydisableing : MonoBehaviour
 {
-    public bool active;
+   
     private GameObject[] powerup;
     private GameObject[] crates;
 
@@ -27,20 +27,12 @@ public class rigidbodydisableing : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(IDK(other));
-        }
-    }
-    public IEnumerator IDK(Collider2D player)
-    {
-        if (active != true)
-        {
-            powerup = GameObject.FindGameObjectsWithTag("Powerup");
-            crates = GameObject.FindGameObjectsWithTag("Crate");
             for (int i = 0; i < powerup.Length; i++)
-            {
-                powerup[i].SetActive(false);
-            }
-            yield return active;
+                {
+                    powerup[i].SetActive(false);
+                }
+            
         }
     }
+    
 } 
