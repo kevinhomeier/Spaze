@@ -7,8 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/00 Chris/Level1.unity
+    guid: d5320ab22821f3d43ad11a27e2e5999c
+  - enabled: 1
+    path: Assets/00 Chris/Level2.unity
     guid: ffc1ed19472e44a4b8c847d50d12073b
   - enabled: 1
-    path: Assets/00 Chris/Map.unity
-    guid: d5320ab22821f3d43ad11a27e2e5999c
+    path: Assets/00 Chris/Level3.unity
+    guid: 54981a2c28130d6418585f068d86ea06
   m_configObjects: {}

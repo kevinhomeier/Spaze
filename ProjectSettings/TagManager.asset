@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Crate
   - Powerup
+  - TextColliders
   layers:
   - Default
   - TransparentFX
@@ -60,4 +61,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 18153891
+    locked: 0
+  - name: Speechbubble
+    uniqueID: 4187344077
+    locked: 0
+  - name: Icon
+    uniqueID: 2351816439
     locked: 0

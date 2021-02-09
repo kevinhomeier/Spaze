@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Teleporter : MonoBehaviour
 {
     private Playermovement thePlayer;
+    public string Level;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class Teleporter : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Map");
+            SceneManager.LoadScene(Level);
         }
     }
 

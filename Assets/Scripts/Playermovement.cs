@@ -8,7 +8,9 @@ public class Playermovement : MonoBehaviour
     public float movespeed;
     public Animator animator;
     public Transform keyFollowPoint;
+    public Transform snuzzFollowPoint;
     public NewKey followingKey;
+    public Snuzz followingSnuzz;
     private GameObject[] powerup;
     private GameObject[] crates;
     public float timer;
@@ -62,7 +64,6 @@ public class Playermovement : MonoBehaviour
             {
                 Rigidbody2D rigidbody = crates[j].GetComponent<Rigidbody2D>();
                 rigidbody.constraints = RigidbodyConstraints2D.None;
-                rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY;
                 rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
             timer = 10f;
