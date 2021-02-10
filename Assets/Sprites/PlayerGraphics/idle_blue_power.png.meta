@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 45063a0ba6808654caa3c157aaa27411
+guid: 42648cef1d7e58841a72b5abb1933c16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1176673317153319114
-    second: walk_idle_standing_spritesheet_0
+      213: -7360429603161678753
+    second: idle_blue_power_0
   - first:
-      213: -6428767552255191283
-    second: walk_idle_standing_spritesheet_1
+      213: 53969897265011962
+    second: idle_blue_power_1
   - first:
-      213: 1172168787870792791
-    second: walk_idle_standing_spritesheet_2
+      213: 6060276517254874927
+    second: idle_blue_power_2
   - first:
-      213: 7303853082790733340
-    second: walk_idle_standing_spritesheet_3
+      213: -5502962210415873036
+    second: idle_blue_power_3
   - first:
-      213: -638874992291054601
-    second: walk_idle_standing_spritesheet_4
+      213: 7458229402035846903
+    second: idle_blue_power_4
   - first:
-      213: -7013377732287125976
-    second: walk_idle_standing_spritesheet_5
+      213: 5363766257452877128
+    second: idle_blue_power_5
   - first:
-      213: -909893738442148050
-    second: walk_idle_standing_spritesheet_6
+      213: 6261932973341666981
+    second: idle_blue_power_6
   - first:
-      213: -582235288930267699
-    second: walk_idle_standing_spritesheet_7
+      213: 1651807191583266582
+    second: idle_blue_power_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_0
+      name: idle_blue_power_0
       rect:
         serializedVersion: 2
         x: 0
@@ -129,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac8aa9dc522645010800000000000000
-      internalID: 1176673317153319114
+      spriteID: f5c574de5408ad990800000000000000
+      internalID: -7360429603161678753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_1
+      name: idle_blue_power_1
       rect:
         serializedVersion: 2
         x: 1200
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d079548e8fd68c6a0800000000000000
-      internalID: -6428767552255191283
+      spriteID: afc9b0be55dbfb000800000000000000
+      internalID: 53969897265011962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_2
+      name: idle_blue_power_2
       rect:
         serializedVersion: 2
         x: 2400
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75cb6d95d41644010800000000000000
-      internalID: 1172168787870792791
+      spriteID: f274e9b326d6a1450800000000000000
+      internalID: 6060276517254874927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_3
+      name: idle_blue_power_3
       rect:
         serializedVersion: 2
         x: 0
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c16226b6eaf7c5560800000000000000
-      internalID: 7303853082790733340
+      spriteID: 4f373cb860d81a3b0800000000000000
+      internalID: -5502962210415873036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_4
+      name: idle_blue_power_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb7c9454924227f0800000000000000
-      internalID: -638874992291054601
+      spriteID: 7fe78b13024f08760800000000000000
+      internalID: 7458229402035846903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_5
+      name: idle_blue_power_5
       rect:
         serializedVersion: 2
         x: 2400
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82624676c1a7bae90800000000000000
-      internalID: -7013377732287125976
+      spriteID: 84584b12efcef6a40800000000000000
+      internalID: 5363766257452877128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_6
+      name: idle_blue_power_6
       rect:
         serializedVersion: 2
         x: 0
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e27bdc837786f53f0800000000000000
-      internalID: -909893738442148050
+      spriteID: 5aee553bcdad6e650800000000000000
+      internalID: 6261932973341666981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_idle_standing_spritesheet_7
+      name: idle_blue_power_7
       rect:
         serializedVersion: 2
         x: 1200
@@ -276,8 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd4d9be61c7be7f0800000000000000
-      internalID: -582235288930267699
+      spriteID: 61791cb93e56ce610800000000000000
+      internalID: 1651807191583266582
       vertices: []
       indices: 
       edges: []

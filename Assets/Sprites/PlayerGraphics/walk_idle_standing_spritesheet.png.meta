@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 31ee76f2832e71a41b338bb5bc2985e0
+guid: 8636a2ec3c7f73148b6d678a8c2c5d14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3531035596904285028
-    second: walk_color_front_sprite_done_0
+      213: 1176673317153319114
+    second: walk_idle_standing_spritesheet_0
   - first:
-      213: 7004285948319160558
-    second: walk_color_front_sprite_done_1
+      213: -6428767552255191283
+    second: walk_idle_standing_spritesheet_1
   - first:
-      213: 6921609354098235052
-    second: walk_color_front_sprite_done_2
+      213: 1172168787870792791
+    second: walk_idle_standing_spritesheet_2
   - first:
-      213: 3333012479445645158
-    second: walk_color_front_sprite_done_3
+      213: 7303853082790733340
+    second: walk_idle_standing_spritesheet_3
   - first:
-      213: -4671859671777660467
-    second: walk_color_front_sprite_done_4
+      213: -638874992291054601
+    second: walk_idle_standing_spritesheet_4
   - first:
-      213: 3218897949986903988
-    second: walk_color_front_sprite_done_5
+      213: -7013377732287125976
+    second: walk_idle_standing_spritesheet_5
   - first:
-      213: -5318220800770711685
-    second: walk_color_front_sprite_done_6
+      213: -909893738442148050
+    second: walk_idle_standing_spritesheet_6
   - first:
-      213: 5089896866215826005
-    second: walk_color_front_sprite_done_7
+      213: -582235288930267699
+    second: walk_idle_standing_spritesheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,19 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_0
+      name: walk_idle_standing_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 418
-        y: 2591
-        width: 375
-        height: 879
+        x: 0
+        y: 2400
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9cb24535dd3ffec0800000000000000
-      internalID: -3531035596904285028
+      spriteID: ac8aa9dc522645010800000000000000
+      internalID: 1176673317153319114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_1
+      name: walk_idle_standing_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1547
-        y: 2651
-        width: 506
-        height: 866
+        x: 1200
+        y: 2400
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee8d2dea5f8343160800000000000000
-      internalID: 7004285948319160558
+      spriteID: d079548e8fd68c6a0800000000000000
+      internalID: -6428767552255191283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_2
+      name: walk_idle_standing_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 2698
-        y: 2663
-        width: 603
-        height: 902
+        x: 2400
+        y: 2400
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6db09090f7e0060800000000000000
-      internalID: 6921609354098235052
+      spriteID: 75cb6d95d41644010800000000000000
+      internalID: 1172168787870792791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_3
+      name: walk_idle_standing_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 359
-        y: 1403
-        width: 483
-        height: 914
+        x: 0
+        y: 1200
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6673d45e03d314e20800000000000000
-      internalID: 3333012479445645158
+      spriteID: c16226b6eaf7c5560800000000000000
+      internalID: 7303853082790733340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_4
+      name: walk_idle_standing_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 1390
-        width: 374
-        height: 879
+        x: 1200
+        y: 1200
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc1383f81683a2fb0800000000000000
-      internalID: -4671859671777660467
+      spriteID: 7fb7c9454924227f0800000000000000
+      internalID: -638874992291054601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_5
+      name: walk_idle_standing_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 2758
-        y: 1450
-        width: 483
-        height: 867
+        x: 2400
+        y: 1200
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b7d33d81a2dbac20800000000000000
-      internalID: 3218897949986903988
+      spriteID: 82624676c1a7bae90800000000000000
+      internalID: -7013377732287125976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_6
+      name: walk_idle_standing_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 287
-        y: 274
-        width: 627
-        height: 867
+        x: 0
+        y: 0
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7fd7fcdb52e136b0800000000000000
-      internalID: -5318220800770711685
+      spriteID: e27bdc837786f53f0800000000000000
+      internalID: -909893738442148050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_color_front_sprite_done_7
+      name: walk_idle_standing_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1547
-        y: 202
-        width: 506
-        height: 916
+        x: 1200
+        y: 0
+        width: 1200
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5521b2e7b32f2a640800000000000000
-      internalID: 5089896866215826005
+      spriteID: dcd4d9be61c7be7f0800000000000000
+      internalID: -582235288930267699
       vertices: []
       indices: 
       edges: []

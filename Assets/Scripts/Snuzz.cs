@@ -12,6 +12,8 @@ public class Snuzz : MonoBehaviour
 
     public Transform followTarget;
 
+    public Sprite opendoor;
+    public GameObject door;
     public GameObject chatbubble;
     public GameObject panel;
 
@@ -30,6 +32,7 @@ public class Snuzz : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, followTarget.position, followSpeed * Time.deltaTime);
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D Other)

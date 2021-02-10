@@ -27,7 +27,6 @@ public class Playermovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
-
         transform.position = transform.position + movement * movespeed * Time.deltaTime;
 
 
@@ -45,6 +44,7 @@ public class Playermovement : MonoBehaviour
                     Rigidbody2D rigidbody = crates[j].GetComponent<Rigidbody2D>();
                     rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
                 }
+                animator.SetBool("Active", false);
             }
          }
 
@@ -54,6 +54,7 @@ public class Playermovement : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
+            animator.SetBool("Active", true);
             for (int i = 0; i < powerup.Length; i++)
             {
                 powerup[i].SetActive(false);
