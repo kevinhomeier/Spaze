@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/00 Chris/StartScreen.unity
+    guid: e192b690866985b4faddb70f4219f8c7
+  - enabled: 1
+    path: Assets/00 Chris/LevelTutorial.unity
+    guid: b96408ba86c93b340bb5e5569f8c71f9
+  - enabled: 1
     path: Assets/00 Chris/Level1.unity
     guid: d5320ab22821f3d43ad11a27e2e5999c
   - enabled: 1
