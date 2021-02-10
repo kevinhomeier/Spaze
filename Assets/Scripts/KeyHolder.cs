@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,7 +34,7 @@ public class KeyHolder : MonoBehaviour
         return keyList.Contains(keyType);
     }
 
-    private void OntriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         Key key = collider.GetComponent<Key>();
         if (key != null)

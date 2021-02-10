@@ -9,6 +9,7 @@ public class Doorpressureplate : MonoBehaviour
     private float timer;
     public Sprite greenbutton;
     public Sprite opendoor;
+    public Sprite closeddoor;
     private AudioSource audioSource;
 
     
