@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class Snuzz : MonoBehaviour
+public class KeyTutorial : MonoBehaviour
 {
 
     private bool isFollowing;
@@ -12,12 +11,7 @@ public class Snuzz : MonoBehaviour
 
     public Transform followTarget;
 
-    public Sprite opendoor;
-    public GameObject door;
-    public GameObject chatbubble;
-    public GameObject panel;
-
-    public float timer;
+    public ChatBubble chatbubble;
 
     // Start is called before the first frame update
     void Start()
@@ -28,18 +22,9 @@ public class Snuzz : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFollowing == true)
+        if(isFollowing)
         {
             transform.position = Vector3.Lerp(transform.position, followTarget.position, followSpeed * Time.deltaTime);
-        }
-        if (timer > 0f)
-        {
-            timer -= Time.deltaTime;
-            if (timer <= 0f)
-            {
-                door.gameObject.GetComponent<SpriteRenderer>().sprite = opendoor;
-                door.gameObject.GetComponent<Collider2D>().enabled = false;
-            }
         }
     }
 
@@ -51,14 +36,11 @@ public class Snuzz : MonoBehaviour
             {
                 PlayerTutorial theTPlayer = Other.GetComponent<PlayerTutorial>();
 
-                followTarget = theTPlayer.snuzzFollowPoint;
+                followTarget = theTPlayer.keyTFollowPoint;
                 isFollowing = true;
-                theTPlayer.followingSnuzz = this;
-                timer = 5;
-                panel.gameObject.SetActive(true);
+                theTPlayer.followingTKey = this;
+                chatbubble.SetUp("Now that you got the Key, try and find the door it belongs to. You might need to solve Puzzles along the way!");
             }
-            
         }
     }
 }
-

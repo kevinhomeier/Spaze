@@ -1,14 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Playermovement : MonoBehaviour
+public class PlayerTutorial : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float movespeed;
     public Animator animator;
-    public Transform keyFollowPoint;
-    public NewKey followingKey;
+    public Transform snuzzFollowPoint;
+    public Transform keyTFollowPoint;
+    public Snuzz followingSnuzz;
+    public KeyTutorial followingTKey;
     private GameObject[] powerup;
     private GameObject[] crates;
     public float timer;
@@ -46,7 +48,7 @@ public class Playermovement : MonoBehaviour
                     rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
                 }
             }
-         }
+        }
 
     }
 

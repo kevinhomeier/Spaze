@@ -5,20 +5,20 @@ using UnityEngine;
 public class SnuzzEnd : MonoBehaviour
 {
 
-    public Playermovement thePlayer;
+    public PlayerTutorial theTPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        thePlayer = FindObjectOfType<Playermovement>();
+        theTPlayer = FindObjectOfType<PlayerTutorial>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (thePlayer != null && thePlayer.followingSnuzz != null && Vector3.Distance(thePlayer.followingSnuzz.transform.position, transform.position) < 0.01f)
+        if (theTPlayer != null && theTPlayer.followingSnuzz != null && Vector3.Distance(theTPlayer.followingSnuzz.transform.position, transform.position) < 0.01f)
         {
-            thePlayer.followingSnuzz = null;
+            theTPlayer.followingSnuzz = null;
         }
 
     }
@@ -27,9 +27,9 @@ public class SnuzzEnd : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (thePlayer.followingSnuzz != null)
+            if (theTPlayer.followingSnuzz != null)
             {
-                thePlayer.followingSnuzz.followTarget = transform;
+                theTPlayer.followingSnuzz.followTarget = transform;
             }
         }
     }

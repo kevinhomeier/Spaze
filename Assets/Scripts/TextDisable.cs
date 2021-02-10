@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextColliders : MonoBehaviour
+public class TextDisable : MonoBehaviour
 {
-    public string text;
     public ChatBubble panel;
     public int i;
 
@@ -13,11 +12,9 @@ public class TextColliders : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if(i==0)
+            if (i == 0)
             {
-                panel.gameObject.SetActive(true);
-                panel.SetUp(text);
-                i = 1;
+                panel.gameObject.SetActive(false);
             }
         }
     }

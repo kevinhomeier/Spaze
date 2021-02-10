@@ -20,15 +20,12 @@ public class ChatBubble : MonoBehaviour
 
     void Update()
     {
-        if (timer > 0f)
-        {
-            timer -= Time.deltaTime;
-            if (timer <= 0f)
-            {
+        
+            
                 SetUp("To find it you must press specific buttons that only correspond with their same - colored  doors in order to go through paths.");
                
-            }
-        }
+            
+        
         
     }
 
