@@ -7,12 +7,10 @@ public class StrenghtTutorial : MonoBehaviour
 
     private GameObject[] powerup;
     private GameObject[] crates;
-    private AudioSource audioSource;
     public ChatBubble panel;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         crates = GameObject.FindGameObjectsWithTag("Crate");
         for (int i = 0; i < crates.Length; i++)
         {
@@ -28,7 +26,6 @@ public class StrenghtTutorial : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        audioSource.Play();
         panel.gameObject.SetActive(false);
         if (other.CompareTag("Player"))
         {

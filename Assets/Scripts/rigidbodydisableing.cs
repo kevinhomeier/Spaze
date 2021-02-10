@@ -27,10 +27,9 @@ public class rigidbodydisableing : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        audioSource.Play();
         if (other.CompareTag("Player"))
         {
-            
+            audioSource.PlayOneShot(audioSource.clip);
             for (int i = 0; i < powerup.Length; i++)
                 {
                     powerup[i].SetActive(false);
