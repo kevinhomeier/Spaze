@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 8c594600165ea0c49a0f9805a53787fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2646348370362943036
+    second: snuzz_animated_start_screen_0
+  - first:
+      213: 6436815961575168780
+    second: snuzz_animated_start_screen_1
+  - first:
+      213: 5217739861724614663
+    second: snuzz_animated_start_screen_2
+  - first:
+      213: 6455904229727605358
+    second: snuzz_animated_start_screen_3
+  - first:
+      213: 8337703303055971209
+    second: snuzz_animated_start_screen_4
+  - first:
+      213: 1430294032037671633
+    second: snuzz_animated_start_screen_5
+  - first:
+      213: -296125744545788503
+    second: snuzz_animated_start_screen_6
+  - first:
+      213: -5838625444921079286
+    second: snuzz_animated_start_screen_7
+  - first:
+      213: 3256865191849550721
+    second: snuzz_animated_start_screen_8
+  - first:
+      213: -302893974664095440
+    second: snuzz_animated_start_screen_9
+  - first:
+      213: -5380207200067213434
+    second: snuzz_animated_start_screen_10
+  - first:
+      213: -4873984311268941828
+    second: snuzz_animated_start_screen_11
+  - first:
+      213: 5201197248882732953
+    second: snuzz_animated_start_screen_12
+  - first:
+      213: 3963544765621990817
+    second: snuzz_animated_start_screen_13
+  - first:
+      213: -439703365508214969
+    second: snuzz_animated_start_screen_14
+  - first:
+      213: 7179542265506667008
+    second: snuzz_animated_start_screen_15
+  - first:
+      213: 1782016841891052094
+    second: snuzz_animated_start_screen_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36ca6762d7b9b420800000000000000
+      internalID: 2646348370362943036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_1
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 4500
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b904a630a245950800000000000000
+      internalID: 6436815961575168780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_2
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 4500
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700dd7c62c2296840800000000000000
+      internalID: 5217739861724614663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e621bdc21baf79950800000000000000
+      internalID: 6455904229727605358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_4
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3600
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9839045aaf875b370800000000000000
+      internalID: 8337703303055971209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_5
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 3600
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d277f718dc69d310800000000000000
+      internalID: 1430294032037671633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad008b4433f3ebf0800000000000000
+      internalID: -296125744545788503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_7
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2700
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a0cea971909fea0800000000000000
+      internalID: -5838625444921079286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_8
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2700
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183e689e2a5b23d20800000000000000
+      internalID: 3256865191849550721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0395a8be887ebcbf0800000000000000
+      internalID: -302893974664095440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_10
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1800
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687aefd9e0aa555b0800000000000000
+      internalID: -5380207200067213434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_11
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1800
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffdcf5a7112c5cb0800000000000000
+      internalID: -4873984311268941828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fe46a375d5e2840800000000000000
+      internalID: 5201197248882732953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_13
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 900
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5f14ee6f6510730800000000000000
+      internalID: 3963544765621990817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_14
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 900
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fc6546e1cd5e9f0800000000000000
+      internalID: -439703365508214969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a9d61d6abd2a360800000000000000
+      internalID: 7179542265506667008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snuzz_animated_start_screen_16
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 2100
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3afdac40eefab810800000000000000
+      internalID: 1782016841891052094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
