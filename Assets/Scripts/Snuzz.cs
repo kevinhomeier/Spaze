@@ -12,8 +12,6 @@ public class Snuzz : MonoBehaviour
 
     public Transform followTarget;
 
-    public Sprite opendoor;
-    public GameObject door;
     public GameObject chatbubble;
     public GameObject panel;
 
@@ -31,15 +29,6 @@ public class Snuzz : MonoBehaviour
         if (isFollowing == true)
         {
             transform.position = Vector3.Lerp(transform.position, followTarget.position, followSpeed * Time.deltaTime);
-        }
-        if (timer > 0f)
-        {
-            timer -= Time.deltaTime;
-            if (timer <= 0f)
-            {
-                door.gameObject.GetComponent<SpriteRenderer>().sprite = opendoor;
-                door.gameObject.GetComponent<Collider2D>().enabled = false;
-            }
         }
     }
 

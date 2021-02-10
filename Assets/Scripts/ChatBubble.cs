@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ChatBubble : MonoBehaviour
 {
     public float timer;
     public TextMeshProUGUI textMeshPro;
+    
+    public Sprite snuzz;
+    public Sprite billy;
+    public string[] sentences;
+    private int i;
+    public Image myImageComponent;
+    public Sprite opendoor;
+    public GameObject door;
 
     public void Start()
     {
@@ -20,15 +29,31 @@ public class ChatBubble : MonoBehaviour
 
     void Update()
     {
-        
-            
-                SetUp("To find it you must press specific buttons that only correspond with their same - colored  doors in order to go through paths.");
-               
-            
-        
-        
-    }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(i == 0 || i ==2 || i == 4 || i == 7)
+            {
+                string sentence = sentences[i];
+                SetUp(sentence);
+                myImageComponent.sprite = billy;
+                i++;
+            }else if(i == 1 || i == 3 || i == 5 || i == 6 || i ==8)
+            {
+                string sentence = sentences[i];
+                SetUp(sentence);
+                myImageComponent.sprite = snuzz;
+                i++;
+            }
+            else if (i == 9)
+            {
+                door.gameObject.GetComponent<SpriteRenderer>().sprite = opendoor;
+                door.gameObject.GetComponent<Collider2D>().enabled = false;
+            }
 
+            
+
+        }
+    }
     
 
 

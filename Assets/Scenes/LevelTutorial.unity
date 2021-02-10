@@ -824,6 +824,79 @@ Transform:
   m_Father: {fileID: 1104222397}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &89103595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89103598}
+  - component: {fileID: 89103597}
+  - component: {fileID: 89103596}
+  m_Layer: 0
+  m_Name: Collider1 (5)
+  m_TagString: TextColliders
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &89103596
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89103595}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &89103597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89103595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eff45ce675bbfb438bda720a09a83db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Congrats, ya found the door! That wasn't hard, was it?
+  panel: {fileID: 1115791919}
+  i: 0
+--- !u!4 &89103598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89103595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 5, z: -1.0766492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121278765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164835427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 3, z: -1.0766492}
+  m_LocalPosition: {x: -5, y: 2, z: -1.0766492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1682,11 +1755,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followSpeed: 3
   followTarget: {fileID: 0}
-  opendoor: {fileID: 21300000, guid: 8e0551e02c8a63e4d8cce92e772c4e6f, type: 3}
-  door: {fileID: 80924048}
   chatbubble: {fileID: 825062782}
   panel: {fileID: 1115791915}
-  timer: 0
+  timer: 3
 --- !u!1001 &311786143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5516,6 +5587,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   textMeshPro: {fileID: 0}
+  snuzz: {fileID: 0}
+  billy: {fileID: 0}
+  sentences: []
+  myImageComponent: {fileID: 0}
+  opendoor: {fileID: 0}
+  door: {fileID: 0}
 --- !u!95 &825062785
 Animator:
   serializedVersion: 3
@@ -6879,7 +6956,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b6c27cb011d2b49a74a90990bf9638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theTPlayer: {fileID: 0}
+  theTPlayer: {fileID: 1227759658}
+  text: This thing will get ya transported to the next Level. I'll stay here and
+    wait for the next subject! Cya around.
+  panel: {fileID: 1115791919}
 --- !u!1 &926188418
 GameObject:
   m_ObjectHideFlags: 0
@@ -7179,6 +7259,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1104222397}
   m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &985913976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985913979}
+  - component: {fileID: 985913978}
+  - component: {fileID: 985913977}
+  m_Layer: 0
+  m_Name: Collider1 (6)
+  m_TagString: TextColliders
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &985913977
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985913976}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &985913978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985913976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f47d3399de841e44a0e6888aa8b1758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1115791919}
+  i: 0
+--- !u!4 &985913979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985913976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 3, z: -1.0766492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &990705098
 GameObject:
@@ -7755,8 +7907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In each level is a hidden key that you will need to collect in order to
-    finish each maze. '
+  m_text: Welcome Player! You might wonder where you are.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9114,7 +9265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -218, y: 77}
+  m_AnchoredPosition: {x: -209.57446, y: 80.851074}
   m_SizeDelta: {x: 964.053, y: 397.034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115791917
@@ -9168,7 +9319,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  textMeshPro: {fileID: 0}
+  textMeshPro: {fileID: 1046689794}
+  snuzz: {fileID: 21300000, guid: d44f2ed367c407d418ad6f8d4a5c8932, type: 3}
+  billy: {fileID: 21300000, guid: dc9eb27acb3654049ae13e4b17935344, type: 3}
+  sentences:
+  - What? Who are you?!
+  - Name's Snuzz. I'll be guiding you through this pre exam, before you'll continue
+    on your own.
+  - Pre Exam? Where am I? What is all this?
+  - You've been selected to run a couple of tests to... test your species intelligence.
+  - What are you talking about?
+  - You'll see. Let's begin. In each maze, you are required to find a key, that is
+    hidden somewhere. To find it you need to solve smaller puzzles along the way.
+  - Got it so far?
+  - I.. guess? I'm basically a lab rat having to find the treat and then get out.
+  - Suppose ya can put it like that. Anyways, lets open this door and begin.
+  myImageComponent: {fileID: 1600322525}
+  opendoor: {fileID: 21300000, guid: 8e0551e02c8a63e4d8cce92e772c4e6f, type: 3}
+  door: {fileID: 80924048}
 --- !u!1 &1123152813
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class SnuzzEnd : MonoBehaviour
 {
 
     public PlayerTutorial theTPlayer;
+    public string text;
+    public ChatBubble panel;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,8 @@ public class SnuzzEnd : MonoBehaviour
             if (theTPlayer.followingSnuzz != null)
             {
                 theTPlayer.followingSnuzz.followTarget = transform;
+                panel.gameObject.SetActive(true);
+                panel.SetUp(text);
             }
         }
     }
