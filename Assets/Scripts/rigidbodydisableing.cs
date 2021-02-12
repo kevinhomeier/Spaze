@@ -7,11 +7,9 @@ public class rigidbodydisableing : MonoBehaviour
    
     private GameObject[] powerup;
     private GameObject[] crates;
-    private AudioSource audioSource;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         crates = GameObject.FindGameObjectsWithTag("Crate");
         for (int i = 0; i < crates.Length; i++)
         {
@@ -29,7 +27,6 @@ public class rigidbodydisableing : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            audioSource.PlayOneShot(audioSource.clip);
             for (int i = 0; i < powerup.Length; i++)
                 {
                     powerup[i].SetActive(false);
