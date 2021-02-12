@@ -47,6 +47,7 @@ public class PlayerTutorial : MonoBehaviour
                     Rigidbody2D rigidbody = crates[j].GetComponent<Rigidbody2D>();
                     rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
                 }
+                animator.SetBool("Active", false);
             }
         }
 
@@ -56,6 +57,7 @@ public class PlayerTutorial : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
+            animator.SetBool("Active", true);
             for (int i = 0; i < powerup.Length; i++)
             {
                 powerup[i].SetActive(false);
