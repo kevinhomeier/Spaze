@@ -6039,7 +6039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d44f2ed367c407d418ad6f8d4a5c8932, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dacf83d74ddb9294b81855cdac018fa6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9921,7 +9921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   textMeshPro: {fileID: 1082120069}
-  ghost: {fileID: 0}
+  ghost: {fileID: 21300000, guid: dacf83d74ddb9294b81855cdac018fa6, type: 3}
   ghostStolen: {fileID: 21300000, guid: 6123c02818ae4fc4ab660c0d317969b2, type: 3}
   billy: {fileID: 21300000, guid: dc9eb27acb3654049ae13e4b17935344, type: 3}
   sentences:
@@ -12545,7 +12545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793396816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 10, z: 0}
+  m_LocalPosition: {x: 20, y: -1.641, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1946206297}
@@ -27212,6 +27212,78 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1022553044}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1391319286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391319289}
+  - component: {fileID: 1391319288}
+  - component: {fileID: 1391319287}
+  m_Layer: 0
+  m_Name: Collider1 (4)
+  m_TagString: TextColliders
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1391319287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391319286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1391319288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391319286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f526fcb1c27083408e0736ee33d446d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 634336430}
+  i: 0
+--- !u!4 &1391319289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391319286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 8, z: -1.0766492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1403465321 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 1539867998468910834, guid: 4b4a7a8417583624792c26c7b8c80ac9,
