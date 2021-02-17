@@ -29,7 +29,7 @@ public class StrenghtTutorial : MonoBehaviour
         panel.gameObject.SetActive(false);
         if (other.CompareTag("Player"))
         {
-            
+            GameObject.Find("PowerupAudio").GetComponent<AudioSource>().Play();
             for (int i = 0; i < powerup.Length; i++)
             {
                 powerup[i].SetActive(false);
