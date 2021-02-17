@@ -17,6 +17,11 @@ public class GhostText : MonoBehaviour
                 panel.gameObject.SetActive(true);
                 i = 1;
             }
+            else if (i == 12)
+            {
+                panel.gameObject.SetActive(false);
+            }
+            
         }
     }
 }

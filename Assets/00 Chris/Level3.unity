@@ -9921,13 +9921,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   textMeshPro: {fileID: 1082120069}
-  snuzz: {fileID: 0}
+  ghost: {fileID: 0}
+  ghostStolen: {fileID: 21300000, guid: 6123c02818ae4fc4ab660c0d317969b2, type: 3}
   billy: {fileID: 21300000, guid: dc9eb27acb3654049ae13e4b17935344, type: 3}
   sentences:
-  - test1
-  - test2
+  - I'm Billy and you? You're the first being I have encountered after Snuzz in this
+    test thing.
+  - Oh Snuzz! I know him! Are you a friend of theirs? Snuzz friends are also my friends!
+    Oh and my name is GhostBox!
+  - Eh, I guess you can say so? He's the reason I'm here and have to do these tests.
+  - Tests? What tests? What do you have to do?
+  - Basically, completing these mazes and finding a key.
+  - A key? You mean the one I have?
+  - I assume so, except there's another one here?
+  - But.. but I can't give it to you! It's the only thing I was ever able to hold
+    onto!
+  - If you want it, you will have to fight me! Even if you're my friend, I don't
+    wanna give it to you!
+  - C'mon, can't you just give it to me? I wanna get outta here and you can have
+    it back aftwards?
+  - No!
+  - Thats not fair!
+  - You can have it back later!
+  i: 0
   myImageComponent: {fileID: 422966138}
-  col: {fileID: 0}
+  col: {fileID: 1033536778}
 --- !u!222 &634336431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11404,6 +11422,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 725082773}
+  panel: {fileID: 634336430}
+  ghostStolen: {fileID: 21300000, guid: 6123c02818ae4fc4ab660c0d317969b2, type: 3}
+  myImageComponent: {fileID: 422966138}
 --- !u!61 &729633554 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7879436626439042427, guid: 485b808267d81be4c911d3aa00853c1f,
@@ -12524,7 +12545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793396816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 20, z: 0}
+  m_LocalPosition: {x: 2, y: 10, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1946206297}
@@ -17782,7 +17803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Test1
+  m_text: Oh? Who are you?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

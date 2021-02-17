@@ -9,10 +9,11 @@ public class Level3ChatBubble : MonoBehaviour
     public float timer;
     public TextMeshProUGUI textMeshPro;
 
-    public Sprite snuzz;
+    public Sprite ghost;
+    public Sprite ghostStolen;
     public Sprite billy;
     public string[] sentences;
-    private int i;
+    public int i;
     public Image myImageComponent;
     public GameObject col;
 
@@ -30,26 +31,35 @@ public class Level3ChatBubble : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (i == 0 || i == 2 || i == 4 || i == 7)
+            if (i == 0 || i == 2 || i == 4 || i == 6 || i == 9 || i ==12)
             {
                 string sentence = sentences[i];
                 SetUp(sentence);
                 myImageComponent.sprite = billy;
                 i++;
             }
-            else if (i == 1)
+            else if (i == 1 || i == 3 || i == 5 | i == 7 || i == 8)
             {
                 string sentence = sentences[i];
                 SetUp(sentence);
-                myImageComponent.sprite = snuzz;
+                myImageComponent.sprite = ghost;
                 i++;
             }
-            else if (i == 3)
-                {
-                    
-                }
-
-
+            else if (i == 11)
+            {
+                string sentence = sentences[i];
+                SetUp(sentence);
+                myImageComponent.sprite = ghostStolen;
+                i++;
+            }
+            else if (i == 10)
+            {
+                string sentence = sentences[i];
+                SetUp(sentence);
+                myImageComponent.sprite = ghost;
+                col.SetActive(false);
+            }
+            
         }
     }
 
