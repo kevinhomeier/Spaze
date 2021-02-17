@@ -5,6 +5,8 @@ using UnityEngine;
 public class KeyDoor : MonoBehaviour
 {
     [SerializeField] private Key.KeyType keyType;
+    public Sprite open;
+    public GameObject doorGameObject;
 
     public Key.KeyType GetKeyType()
     {
@@ -13,6 +15,7 @@ public class KeyDoor : MonoBehaviour
 
     public void OpenDoor()
     {
-        gameObject.SetActive(false);
+        doorGameObject.gameObject.GetComponent<SpriteRenderer>().sprite = open;
+        doorGameObject.gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 }

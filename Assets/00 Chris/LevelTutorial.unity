@@ -4416,7 +4416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eff45ce675bbfb438bda720a09a83db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: You found the key! Collect it!
+  text: You found the key! Collect it! But watch out, there might be different coloured
+    ones in later levels.
   panel: {fileID: 1115791919}
   i: 0
 --- !u!4 &624621927
