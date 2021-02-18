@@ -13,6 +13,7 @@ public class PlayerLvl3 : MonoBehaviour
     public Key otherKey;
     private GameObject[] powerup;
     private GameObject[] crates;
+    public Level3ChatBubble cb;
     public float timer;
     
 
@@ -38,6 +39,7 @@ public class PlayerLvl3 : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0f)
             {
+                cb.gameObject.SetActive(false);
                 for (int i = 0; i < powerup.Length; i++)
                 {
                     powerup[i].SetActive(true);

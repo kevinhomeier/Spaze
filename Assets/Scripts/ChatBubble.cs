@@ -9,8 +9,6 @@ public class ChatBubble : MonoBehaviour
     public float timer;
     public TextMeshProUGUI textMeshPro;
     
-    public Sprite snuzz;
-    public Sprite billy;
     public string[] sentences;
     private int i;
     public Image myImageComponent;
@@ -35,13 +33,13 @@ public class ChatBubble : MonoBehaviour
             {
                 string sentence = sentences[i];
                 SetUp(sentence);
-                myImageComponent.sprite = billy;
+                myImageComponent.GetComponent<Animator>().SetBool("Billy", true);
                 i++;
             }else if(i == 1 || i == 3 || i == 5 || i == 6 || i ==8)
             {
                 string sentence = sentences[i];
                 SetUp(sentence);
-                myImageComponent.sprite = snuzz;
+                myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
                 i++;
             }
             else if (i == 9)

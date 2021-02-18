@@ -5511,8 +5511,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   textMeshPro: {fileID: 0}
-  snuzz: {fileID: 0}
-  billy: {fileID: 0}
   sentences: []
   myImageComponent: {fileID: 0}
   opendoor: {fileID: 0}
@@ -9245,8 +9243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   textMeshPro: {fileID: 1046689794}
-  snuzz: {fileID: 21300000, guid: d44f2ed367c407d418ad6f8d4a5c8932, type: 3}
-  billy: {fileID: 21300000, guid: dc9eb27acb3654049ae13e4b17935344, type: 3}
   sentences:
   - What? Who are you?!
   - Name's Snuzz. I'll be guiding you through this pre exam, before you'll continue
@@ -12544,6 +12540,7 @@ GameObject:
   - component: {fileID: 1600322524}
   - component: {fileID: 1600322526}
   - component: {fileID: 1600322525}
+  - component: {fileID: 1600322527}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -12567,7 +12564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -256, y: 0.0026855469}
+  m_AnchoredPosition: {x: -256, y: 0.002670288}
   m_SizeDelta: {x: 124.4583, y: 115.2864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600322525
@@ -12608,6 +12605,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600322523}
   m_CullTransparentMesh: 1
+--- !u!95 &1600322527
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600322523}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4d5c8c1a399f0c4ca11b032852c949f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1603228089
 GameObject:
   m_ObjectHideFlags: 0
