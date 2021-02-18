@@ -5,21 +5,17 @@ using UnityEngine;
 public class GhostText : MonoBehaviour
 {
     public Level3ChatBubble panel;
-    public int i;
+    public int h;
 
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (i == 0)
+            if (h == 0)
             {
                 panel.gameObject.SetActive(true);
-                i = 1;
-            }
-            else if (i == 12)
-            {
-                panel.gameObject.SetActive(false);
+                h = 1;
             }
             
         }

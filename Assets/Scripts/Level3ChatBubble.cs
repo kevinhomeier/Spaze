@@ -10,7 +10,7 @@ public class Level3ChatBubble : MonoBehaviour
     public TextMeshProUGUI textMeshPro;
 
     public string[] sentences;
-    public int i;
+    public int h;
     public Image myImageComponent;
     public GameObject col;
     public PlayerLvl3 player;
@@ -25,55 +25,58 @@ public class Level3ChatBubble : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (i == 0 || i == 2 || i == 4 || i == 6 || i == 9)
+            if (h == 0 || h == 2 || h == 4 || h == 6 || h == 9)
             {
-                string sentence = sentences[i];
+                string sentence = sentences[h];
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
                 myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
-                i++;
+                h++;
             }
-            else if (i == 1 || i == 3 || i == 5 | i == 7 || i == 8)
+            else if (h == 1 || h == 3 || h == 5 | h == 7 || h == 8)
             {
-                string sentence = sentences[i];
+                string sentence = sentences[h];
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
-                i++;
+                h++;
             }
-            else if (i == 10)
+            else if (h == 10)
             {
-                string sentence = sentences[i];
+                string sentence = sentences[h];
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
                 col.SetActive(false);
             }
-            else if (i == 11)
+            else if (h == 11)
             {
-                string sentence = sentences[i];
+                string sentence = sentences[h];
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
-                i++;
+                h++;
             }
-            else if (i == 12)
+            else if (h == 12)
             {
-                string sentence = sentences[i];
+                string sentence = sentences[h];
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", true);
                 myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
-                player.timer = 3;
+                h++;
             }
-
+            else if(h==13)
+            {
+                gameObject.SetActive(false);
+            }
 
         }
     }

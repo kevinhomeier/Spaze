@@ -20,7 +20,7 @@ public class Ghost : MonoBehaviour
             myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
             myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
             panel.SetUp("Hey!");
-            panel.i = 11;
+            panel.h = 11;
         }
     }
 
