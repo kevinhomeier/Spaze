@@ -16,7 +16,9 @@ public class Ghost : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             animator.SetBool("Stolen", true);
-            myImageComponent.sprite = ghostStolen;
+            myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", true);
+            myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
+            myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
             panel.SetUp("Hey!");
             panel.i = 11;
         }

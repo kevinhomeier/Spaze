@@ -5993,6 +5993,7 @@ GameObject:
   - component: {fileID: 422966137}
   - component: {fileID: 422966139}
   - component: {fileID: 422966138}
+  - component: {fileID: 422966140}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -6057,6 +6058,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422966136}
   m_CullTransparentMesh: 1
+--- !u!95 &422966140
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422966136}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05f8701da5586564399e2b15c627ff4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &423063312 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7879436626439042427, guid: 485b808267d81be4c911d3aa00853c1f,
@@ -7590,7 +7610,7 @@ Transform:
   m_LocalScale: {x: 0.061399117, y: 0.061399117, z: 0.061399117}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 34.768}
 --- !u!95 &500069440
 Animator:
@@ -8128,7 +8148,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &519586544
 BoxCollider2D:
@@ -10294,11 +10314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f3387b545424a41a459af1e4e54063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   textMeshPro: {fileID: 1082120069}
-  ghost: {fileID: 21300000, guid: dacf83d74ddb9294b81855cdac018fa6, type: 3}
-  ghostStolen: {fileID: 21300000, guid: 6123c02818ae4fc4ab660c0d317969b2, type: 3}
-  billy: {fileID: 21300000, guid: dc9eb27acb3654049ae13e4b17935344, type: 3}
   sentences:
   - I'm Billy and you? You're the first being I have encountered after Snuzz in this
     test thing.
@@ -10321,6 +10337,7 @@ MonoBehaviour:
   i: 0
   myImageComponent: {fileID: 422966138}
   col: {fileID: 1033536778}
+  player: {fileID: 793396820}
 --- !u!222 &634336431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12862,6 +12879,7 @@ MonoBehaviour:
   otherKeyFollowPoint: {fileID: 1946206297}
   following3Key: {fileID: 0}
   otherKey: {fileID: 0}
+  cb: {fileID: 634336430}
   timer: 0
 --- !u!212 &793396821
 SpriteRenderer:
@@ -12923,7 +12941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793396816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: -1.72, z: 0}
+  m_LocalPosition: {x: 19.97, y: -1.69, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1946206297}
@@ -27602,78 +27620,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1022553044}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1391319286
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1391319289}
-  - component: {fileID: 1391319288}
-  - component: {fileID: 1391319287}
-  m_Layer: 0
-  m_Name: Collider1 (4)
-  m_TagString: TextColliders
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1391319287
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391319286}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1391319288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391319286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f526fcb1c27083408e0736ee33d446d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 634336430}
-  i: 0
---- !u!4 &1391319289
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391319286}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 8, z: -1.0766492}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1403465321 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 1539867998468910834, guid: 4b4a7a8417583624792c26c7b8c80ac9,
