@@ -20,7 +20,7 @@ public class Speedpowerup : MonoBehaviour
     IEnumerator Pickup(Collider2D player)
     {
         
-        Playermovement playerscript = player.GetComponent<Playermovement>();
+        PlayerLvl3 playerscript = player.GetComponent<PlayerLvl3>();
         playerscript.movespeed *= multiplier;
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
