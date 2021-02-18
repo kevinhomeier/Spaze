@@ -8,10 +8,13 @@ public class PlayerLvl3 : MonoBehaviour
     public float movespeed;
     public Animator animator;
     public Transform key3FollowPoint;
+    public Transform otherKeyFollowPoint;
     public Level3Key following3Key;
+    public Key otherKey;
     private GameObject[] powerup;
     private GameObject[] crates;
     public float timer;
+    
 
     void Start()
     {

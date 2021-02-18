@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00 Chris/Level3.unity
     guid: 54981a2c28130d6418585f068d86ea06
+  - enabled: 1
+    path: Assets/00 Chris/EndScreen.unity
+    guid: 122de11ed6b740143834de4d6580b558
   m_configObjects: {}

@@ -2,44 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyDoor : MonoBehaviour
+public class Level3Door : MonoBehaviour
 {
-    [SerializeField] private Key.KeyType keyType;
-    public Sprite open;
-    public GameObject doorGameObject;
+
     private PlayerLvl3 thePlayer;
 
     public SpriteRenderer theSR;
     public Sprite doorOpenSprite;
+    public GameObject Collider;
 
     public bool doorOpen, waitingToOpen;
 
+    // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerLvl3>();
     }
 
-
-    public Key.KeyType GetKeyType()
-    {
-        return keyType;
-    }
-
-    
-
+    // Update is called once per frame
     void Update()
     {
         if (waitingToOpen)
         {
-            if (Vector3.Distance(thePlayer.otherKey.transform.position, transform.position) < 0.01f)
+            if (Vector3.Distance(thePlayer.following3Key.transform.position, transform.position) < 0.01f)
             {
                 waitingToOpen = false;
 
                 doorOpen = true;
                 theSR.sprite = doorOpenSprite;
-                thePlayer.otherKey.gameObject.SetActive(false);
-                thePlayer.otherKey = null;
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                thePlayer.following3Key.gameObject.SetActive(false);
+                thePlayer.following3Key = null;
+                Destroy(Collider);
 
             }
         }
@@ -48,9 +41,9 @@ public class KeyDoor : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (thePlayer.otherKey != null)
+            if (thePlayer.following3Key != null)
             {
-                thePlayer.otherKey.followTarget = transform;
+                thePlayer.following3Key.followTarget = transform;
                 waitingToOpen = true;
 
             }
