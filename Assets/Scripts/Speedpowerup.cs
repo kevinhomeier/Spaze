@@ -17,7 +17,7 @@ public class Speedpowerup : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         timer = 10f;
-        timer2 = 3f;
+        timer2 = 6f;
         if (other.CompareTag("Player"))
         {
             StartCoroutine(Pickup(other));

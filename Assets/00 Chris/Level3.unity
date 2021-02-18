@@ -10332,7 +10332,7 @@ MonoBehaviour:
   - C'mon, can't you just give it to me? I wanna get outta here and you can have
     it back afterwards?
   - No!
-  - Thats not fair!
+  - That's not fair!
   - You can have it back later!
   i: 0
   myImageComponent: {fileID: 422966138}
@@ -12925,7 +12925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793396816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.94, y: -1.57, z: 0}
+  m_LocalPosition: {x: 4.22, y: 5.97, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1946206297}
