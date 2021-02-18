@@ -50,6 +50,7 @@ public class PlayerLvl3 : MonoBehaviour
                     rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
                 }
                 animator.SetBool("Active", false);
+                animator.SetBool("SActive", false);
             }
         }
 
@@ -70,6 +71,11 @@ public class PlayerLvl3 : MonoBehaviour
                 rigidbody.constraints = RigidbodyConstraints2D.None;
                 rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
+            timer = 10f;
+        }
+        if (other.CompareTag("SpeedPowerup"))
+        {
+            animator.SetBool("SActive", true);
             timer = 10f;
         }
     }

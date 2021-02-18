@@ -32,6 +32,7 @@ public class Level3ChatBubble : MonoBehaviour
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
                 myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", false);
+                myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
                 i++;
             }
             else if (i == 1 || i == 3 || i == 5 | i == 7 || i == 8)
@@ -40,6 +41,7 @@ public class Level3ChatBubble : MonoBehaviour
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
+                myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
                 i++;
             }
             else if (i == 10)
@@ -48,6 +50,7 @@ public class Level3ChatBubble : MonoBehaviour
                 SetUp(sentence);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
+                myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
                 col.SetActive(false);
             }
             else if (i == 11)
@@ -57,6 +60,7 @@ public class Level3ChatBubble : MonoBehaviour
                 myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", true);
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
+                myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
                 i++;
             }
             else if (i == 12)
@@ -66,7 +70,8 @@ public class Level3ChatBubble : MonoBehaviour
                 myImageComponent.GetComponent<Animator>().SetBool("Billy", true);
                 myImageComponent.GetComponent<Animator>().SetBool("GhostStolen", false);
                 myImageComponent.GetComponent<Animator>().SetBool("Ghost", false);
-                player.timer = 5;
+                myImageComponent.GetComponent<Animator>().SetBool("Snuzz", false);
+                player.timer = 3;
             }
 
 
